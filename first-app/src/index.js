@@ -1,20 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Car } from './basics/car';
+import { Bike } from './basics/bike';
 
-import hi from './hi.module.css'
-
-const abc = 10
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const header = <div> Head {abc} </div>
-const content = <div>  <h1> Hello to React </h1> </div>
-const footer = <div> Footer </div>
+const content = (
+  <div>
+    <h1> Welcome to react </h1>  
+    <Car/>
+    <Bike/>
+  </div>
+)
 
-const dv = React.createElement('div', null, 'Hi')
-
-root.render(<div style={hi.err}>
-  {header}
-  {content}
-  {footer}
-  {dv}
-</div>);
+root.render(content);
