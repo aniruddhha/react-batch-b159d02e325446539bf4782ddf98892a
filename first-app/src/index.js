@@ -1,16 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Car } from './basics/car';
-import { Bike } from './basics/bike';
+import { Cities } from './adv/loops';
+// import { ProgressBar } from './pb/progress';
+import './index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-const content = (
-  <div>
-    <h1> Welcome to react </h1>  
-    <Car/>
-    <Bike/>
-  </div>
-)
-
-root.render(content);
+root.render(<Cities/>);
