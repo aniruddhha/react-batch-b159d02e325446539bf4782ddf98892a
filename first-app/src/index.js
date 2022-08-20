@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+import hi from './hi.module.css'
+
 const abc = 10
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -10,7 +12,7 @@ const footer = <div> Footer </div>
 
 const dv = React.createElement('div', null, 'Hi')
 
-root.render(<div>
+root.render(<div style={hi.err}>
   {header}
   {content}
   {footer}
