@@ -13,7 +13,7 @@ export function Cities() {
     // nmLi.push(<li>lmn</li>)
     // nmLi.push(<li>xyz</li>)
 
-    const nmLi = names.map( nm => <li>{nm.name}</li>  )
+    const nmLi = names.map( (nm, ind) => <li key={ind}>{nm.name}</li>  )
 
     return(
         <>
