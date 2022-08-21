@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Basic } from './events/basics';
+import { MainPanel } from './data-flow/mn-pnl';
+import './index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const content = <Basic/>
+const content = <MainPanel/>
 
 root.render(content);
 

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import styles from './basics.module.css'
+import abc from './basics.module.css'
 
 export function Basic() {
 
@@ -35,13 +35,13 @@ export function Basic() {
             <div>
                 <input type='button' value ='Okay' onClick={ () => console.log(`clicked 2`)} />
             </div>
-            <div className={styles.container}>
-                <div className={styles.box} style={{ backgroundColor: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})` }} onMouseEnter={onMsEnt}></div>
-                <div className={styles.box} style={{ backgroundColor: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})` }} onMouseEnter={onMsEnt}></div>
-                <div className={styles.box} style={{ backgroundColor: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})` }} onMouseEnter={onMsEnt}></div>
-                <div className={styles.box} style={{ backgroundColor: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})` }} onMouseEnter={onMsEnt}></div>
-                <div className={styles.box} style={{ backgroundColor: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})` }} onMouseEnter={onMsEnt}></div>
-                <div className={styles.box} style={{ backgroundColor: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})` }} onMouseEnter={onMsEnt}></div>
+            <div className={abc.container}>
+                <div className={abc.box} style={{ backgroundColor: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})` }} onMouseEnter={onMsEnt}></div>
+                <div className={abc.box} style={{ backgroundColor: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})` }} onMouseEnter={onMsEnt}></div>
+                <div className={abc.box} style={{ backgroundColor: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})` }} onMouseEnter={onMsEnt}></div>
+                <div className={abc.box} style={{ backgroundColor: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})` }} onMouseEnter={onMsEnt}></div>
+                <div className={abc.box} style={{ backgroundColor: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})` }} onMouseEnter={onMsEnt}></div>
+                <div className={abc.box} style={{ backgroundColor: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})` }} onMouseEnter={onMsEnt}></div>
             </div>
         </>
     )
