@@ -6,6 +6,8 @@ export function Login() {
 
     const onCtrlCh = e => {
 
+        console.log('Called')
+
         const { name, value } = e.target
 
         if (name == 'fnm') {
@@ -32,8 +34,9 @@ export function Login() {
     }
 
     useEffect(() => {
+        console.log(`Called`)
         console.log(user)
-    }, [user])
+    }, [])
 
     const onLogin = ev => {
         console.log(ev)
@@ -57,7 +60,7 @@ export function Login() {
         <form className='container' onSubmit={onLogin}>
             <div className="row g-3 mt-2">
                 <div className="col">
-                    <input type="text" name="fnm" className="form-control" placeholder="First name" value={user.fnm} onChange={onCtrlCh} />
+                    <input type="text" name="fnm" className={`form-control ${ err.fnm ? 'border-danger' : ''}`} placeholder="First name" value={user.fnm} onChange={onCtrlCh} />
                     <label>{err.fnm && err.fnm}</label>
                 </div>
                 <div className="col">
