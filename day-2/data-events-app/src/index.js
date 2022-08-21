@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { MainPanel } from './data-flow/mn-pnl';
+import { ApiCaller } from './http/api-calls';
 import './index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const content = <MainPanel/>
+const content = <ApiCaller/>
 
 root.render(content);
 
