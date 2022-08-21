@@ -1,0 +1,13 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+.container {
+    width: 100%;
+    border: 1px solid red;
+
+    display: flex;
+    justify-content: space-between;
+}
