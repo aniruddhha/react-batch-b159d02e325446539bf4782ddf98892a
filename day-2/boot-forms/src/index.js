@@ -1,0 +1,15 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BootDemo } from './bt-dm/boot-demo';
+import './index.css';
+import { Login } from './lgn/login';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Login/>
+  </React.StrictMode>
+);
+
