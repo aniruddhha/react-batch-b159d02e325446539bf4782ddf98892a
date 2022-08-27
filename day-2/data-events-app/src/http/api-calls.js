@@ -2,12 +2,12 @@ import { useEffect, useState } from "react"
 
 export function ApiCaller() {
     
-
     // window, document, localStorage, sessionStorage, localtion, media, console
 
     const [user, setUser] = useState({ })
     const [wd, setWd] = useState(0)
     const [ht, setHt] = useState(0)
+ 
 
     const apiGetCall = () => {
         fetch('https://reqres.in/api/users/1')
