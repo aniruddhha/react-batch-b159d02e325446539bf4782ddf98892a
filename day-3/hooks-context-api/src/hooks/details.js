@@ -8,7 +8,7 @@ export const Details = () => {
         fetch('https://reqres.in/api/users/1')
         .then(res => res.json())
         .then(us => console.log(us))
-    }, [])
+    },[])
 
     useEffect(() => {
         console.log(`cnt ${cnt}`)

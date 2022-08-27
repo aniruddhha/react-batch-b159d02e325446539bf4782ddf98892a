@@ -6,5 +6,5 @@ import { IpDtl } from './hooks/refs';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-      <IpDtl />
+      <App />
 );
