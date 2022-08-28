@@ -13,10 +13,17 @@ export const counterSlice = createSlice({
         },
         decrement : (state) => {
             state.count -= 1
+        },
+        incrementBy : (state, action) => {
+            console.log(action)
+            state.count += Number(action.payload)
         }
     }
 })
 
-export const { increment, decrement } = counterSlice.actions
+export const { increment, decrement, incrementBy } = counterSlice.actions
+export const selectorCount = state => state.counter.count
+
+export const asyncAction = amt => dispatch => setTimeout( () => dispatch(incrementBy(amt)), 1300 )
 
 export default counterSlice.reducer
